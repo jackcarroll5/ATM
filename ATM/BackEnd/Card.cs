@@ -42,6 +42,11 @@ public class Card
         }
     }
 
-
+    public ATM.Account Account
+    {
+        get => default(ATM.Account);
+        set
+        {
+        }
+    }
 }
-    
