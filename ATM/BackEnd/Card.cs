@@ -8,6 +8,7 @@ public class Card
     public int Cvc{get;}
     public CardType Type{get;}
     private int nbErrors;
+
     public bool IsBlocked
     {
         get{ return this.nbErrors >= MAXNBERRORS; }
