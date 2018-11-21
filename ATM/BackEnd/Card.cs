@@ -42,6 +42,22 @@ public class Card
         }
     }
 
+    //duplicated method here to allow sonar cloud to find a problem 
+    public void LogOut(bool printReceive)
+    {
+        if (!this.isLogged)
+        {
+            throw new InvalidOperationException("No user is logged in.");
+        }
+
+        if (printReceive)
+        {
+            this.PrintReceive();
+        }
+
+        this.GiveBackCard();
+    }
+
 
 }
     

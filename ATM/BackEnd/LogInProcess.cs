@@ -5,7 +5,8 @@ public class LogInProcess
 {
     public Card Card { get; private set; }
 
-    private bool isLogged;
+    //created code smell here for sonar cloud to fail - removed visability 
+    bool isLogged;
     private List<Transaction> transactionList;
 
     public LogInProcess()
